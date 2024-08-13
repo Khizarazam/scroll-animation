@@ -30,7 +30,7 @@ function App() {
 
     function preloadImages() {
       for (let i = 1; i <= frames.maxIndex; i++) {
-        const imageUrl =  `https://khizarazam.github.io/scroll-animation/compressed_images/frame_0028.jpg`;
+        const imageUrl =  `/scroll-animation/compressed_images/frame_0028.jpg`;
         const img = new Image();
         img.src = imageUrl;
         img.onload = () => {
