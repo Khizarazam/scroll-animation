@@ -30,12 +30,13 @@ function App() {
 
     function preloadImages() {
       for (let i = 1; i <= frames.maxIndex; i++) {
-        const imageUrl = `/scroll-animation/compressed_images/frame_${i.toString().padStart(4, "0")}.jpg`;
+        const imageUrl = `/scroll-animation/compressed_images/frame_0023.jpg`;
         const img = new Image();
         img.src = imageUrl;
         img.onload = () => {
           imagesLoaded++;
           if (imagesLoaded === frames.maxIndex) {
+            console.log("all images loaded");
             LoadImage(frames.currentIndex);
             startAnimation();
           }
